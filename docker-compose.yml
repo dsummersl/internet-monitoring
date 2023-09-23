@@ -61,13 +61,13 @@ services:
 
   speedtest:
     container_name: speedtest
-    image: stefanwalther/speedtest-exporter
+    image: miguelndecarvalho/speedtest-exporter
     ports:
-      - 9696:9696
+      - 9798:9798
     tty: true
     stdin_open: true
     expose:
-      - 9696
+      - 9798
     networks:
       - internet-monitoring
     restart: always
